@@ -197,11 +197,61 @@ Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'arr
 Usa uno più for loop per raggiungere il risultato
 
 (tip: cerca un metodo degli array per rimuovere un elemento)
-
 Una volta fatto, crea un console.log() per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
+for (let i = 0; i < characters.length; i++) {
+  if (characters.length === 10) {
+    characters.splice(4, i);
+    characters.splice(5, i);
+  }
+}
+console.log(characters);
 
 /* EXTRA ESERCIZIO 10
 
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
+const randomStarWarsCharacters =
+  starWarsCharacters[Math.floor(Math.random() * starWarsCharacters.length)];
+console.log(randomStarWarsCharacters);
+if (randomStarWarsCharacters === starWarsCharacters[0]) {
+  console.log(
+    "Luke Skywalker è un uomo ed è alto 1.72. I suoi capelli sono biondi, i suoi occhi sono blu e la sua pelle è chiara "
+  );
+} else if (randomStarWarsCharacters === starWarsCharacters[1]) {
+  console.log(
+    "C-3PO è un robot. La sua altezza è di 1.67, i suoi occhi sono gialli e la sua pelle dorata"
+  );
+} else if (randomStarWarsCharacters === starWarsCharacters[2]) {
+  console.log(
+    "R2-D2 è un robot. La sua altezza è di 96, i suoi occhi sono rossi e il suo corpo è bianco e blu"
+  );
+} else if (randomStarWarsCharacters === starWarsCharacters[3]) {
+  console.log(
+    "Darth Vader è un uomo ed è alto 2.02. I suoi occhi sono gialli e la sua pelle bianca"
+  );
+} else if (randomStarWarsCharacters === starWarsCharacters[4]) {
+  console.log(
+    "Leia Organa è una donna ed è alta 1.50. I suoi capelli sono castani, i suoi occhi marroni e la sua pelle è chiara"
+  );
+} else if (randomStarWarsCharacters === starWarsCharacters[5]) {
+  console.log(
+    "Owen Lars è un uomo ed è alto 1.78. I suoi capelli sono castani e grigi, i suoi occhi sono blu e la sua pelle è chiara "
+  );
+} else if (randomStarWarsCharacters === starWarsCharacters[6]) {
+  console.log(
+    "Beru Whitesun Lars è una donna ed è alta 1.65. I suoi capelli sono castani, i suoi occhi sono blu e la sua pelle è chiara"
+  );
+} else if (randomStarWarsCharacters === starWarsCharacters[7]) {
+  console.log(
+    "R5-D4 è un robot. La sua altezza è di 97, i suoi occhi sono rossi ed il suo corpo è bianco e rosso"
+  );
+} else if (randomStarWarsCharacters === starWarsCharacters[8]) {
+  console.log(
+    "Biggs Darklighter è un uomo ed è alto 1.83. I suoi capelli sono mori, i suoi occhi sono marroni e la sua pelle è chiara"
+  );
+} else if (randomStarWarsCharacters === starWarsCharacters[9]) {
+  console.log(
+    "Obi-Wan Kenobi è un uomo ed è alto 1.82. I suoi capelli sono ramati , i suoi occhi sono blu e grigi e la sua pelle è chiara"
+  );
+}
